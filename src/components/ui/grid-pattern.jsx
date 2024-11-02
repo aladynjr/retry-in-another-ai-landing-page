@@ -3,14 +3,14 @@ import { useId } from "react";
 import { cn } from "@/lib/utils";
 
 interface GridPatternProps {
-  width?: number;
-  height?: number;
-  x?: number;
-  y?: number;
-  squares?: Array<[x: number, y: number]>;
-  strokeDasharray?: string;
-  className?: string;
-  [key: string]: unknown;
+  width?;
+  height?;
+  x?;
+  y?;
+  squares?: Array<[x, y]>;
+  strokeDasharray?;
+  className?;
+  [key]: unknown;
 }
 
 export function GridPattern({
